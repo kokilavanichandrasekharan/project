@@ -1,0 +1,34 @@
+name: Deploy to Environment
+
+on:
+push:
+    branches:
+    - main
+
+workflow_dispatch:
+env:
+COA_VERSION: latest # Before utilizing this pipeline in production scenarios, it is advised to pin a specific version. This practice aims to reduce potential disruptions. You can find the released versions on NPM at this link: https://www.npmjs.com/package/@coalescesoftware/coa 
+jobs:
+deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+    with:
+        node-version: 22.19.0
+
+    # Fetch config secret from GitHub Actions secret repository, then write coa config to a temporary file
+    - run: echo '${{ secrets.COA_CONFIG }}' >> COA_CONFIG
+    
+    # Install Coalesce CLI tool, if not installed already
+    - run: npm list | grep "@coalescesoftware/coa@${{ env.COA_VERSION }}" || npm install @coalescesoftware/coa@${{ env.COA_VERSION }}
+
+    # Print version number
+    - run: npx coa --version
+
+    # Create Deployment Plan
+    - run: npx coa plan --config COA_CONFIG --out ./coa-plan --debug
+
+    # Deploy Plan
+    - run: npx coa deploy --config COA_CONFIG --plan ./coa-plan --debug
