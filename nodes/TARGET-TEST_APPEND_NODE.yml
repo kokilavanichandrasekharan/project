@@ -1,0 +1,84 @@
+fileVersion: 1
+id: 5f2ae50a-5bbc-452e-9535-8ef5de6af917
+name: TEST_APPEND_NODE
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests:
+      - continueOnFailure: false
+        description: ""
+        name: Test
+        runOrder: Before
+        templateString: |
+          SELECT ID, DATE
+          FROM {{ ref('TARGET','TEST_APPEND_NODE') }}
+          GROUP BY ID, DATE
+          HAVING COUNT(*) > 1
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 255cc7cc-5d9c-4bab-a4b8-ad7e1f72138a
+          stepCounter: 5f2ae50a-5bbc-452e-9535-8ef5de6af917
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b0b9931-6a4b-4ac3-afe2-2ea61a39d411
+          stepCounter: 5f2ae50a-5bbc-452e-9535-8ef5de6af917
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: TEST_APPEND_NODE
+        noLinkRefs: []
+  name: TEST_APPEND_NODE
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

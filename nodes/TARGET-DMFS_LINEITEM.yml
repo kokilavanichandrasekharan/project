@@ -258,15 +258,12 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases:
-          STG_LINEITEM: cc8e7c49-a123-4644-a064-7e9df139d3c7
+      - aliases: {}
         customSQL:
           customSQL: ""
-        dependencies:
-          - locationName: TARGET
-            nodeName: STG_LINEITEM
+        dependencies: []
         join:
-          joinCondition: FROM {{ ref('TARGET', 'STG_LINEITEM') }} "STG_LINEITEM"
+          joinCondition: ""
         name: DMFS_LINEITEM
         noLinkRefs: []
   name: DMFS_LINEITEM
