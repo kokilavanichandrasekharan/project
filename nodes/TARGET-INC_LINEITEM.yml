@@ -253,12 +253,12 @@ operation:
           - locationName: SRC
             nodeName: LINEITEM
         join:
-          joinCondition: |+
-            FROM {{ ref('SRC', 'LINEITEM') }} "LINEITEM"
-              WHERE "LINEITEM"."L_COMMITDATE" >
-              (SELECT COALESCE(MAX("LINEITEM"."L_COMMITDATE"), '1900-01-01')
-                        FROM {{ ref_no_link('TARGET', 'PSTG_LINEITEM') }} )
+          joinCondition: |
 
+            FROM {{ ref('SRC', 'LINEITEM') }} "LINEITEM"
+              WHERE "LINEITEM"."L_COMMITDATE" > 
+              (SELECT COALESCE(MAX("L_COMMITDATE"), '1900-01-01') 
+                        FROM {{ ref_no_link('TARGET', 'PSTG_LINEITEM') }} )
         name: INC_LINEITEM
         noLinkRefs:
           - locationName: TARGET
