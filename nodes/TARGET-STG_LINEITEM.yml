@@ -1,6 +1,6 @@
 fileVersion: 1
-id: cc8e7c49-a123-4644-a064-7e9df139d3c7
-name: STG_LINEITEM_V2
+id: a61b1351-bd96-473e-bb56-a6e65c241335
+name: STG_LINEITEM
 operation:
   config:
     insertStrategy: INSERT
@@ -19,8 +19,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0171f1d6-b77f-4d8c-b79e-1afafba3f542
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: b39b3c6c-59d1-45f0-a5c1-b26309eb9406
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -30,12 +30,11 @@ operation:
           - columnReferences:
               - columnCounter: e7a68822-b8f1-444c-aa26-756fa01f31d8
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 00b28b50-239a-46f2-99c2-87daab28fb6b
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 133d19b0-4565-48ca-93c4-3b90849c1d2b
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -45,12 +44,11 @@ operation:
           - columnReferences:
               - columnCounter: 89c664a4-1ec5-4841-ac15-fd6be64f80b8
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 9f2826d9-81d9-48e0-b1ba-2e01204fe61a
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: cca6598c-010e-4ad6-92e7-81d0906e8b6e
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -60,12 +58,11 @@ operation:
           - columnReferences:
               - columnCounter: 95d14dbe-d37a-4cf8-9f03-bdfdf6524400
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: a53a5f7f-537d-4547-9946-153be78201b8
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 71c98c88-2fdb-465c-a6ed-580963af021b
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -75,12 +72,11 @@ operation:
           - columnReferences:
               - columnCounter: daf51e76-60dc-4f04-a951-16222fe405e3
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 96d9d8fe-32e3-4007-827c-7cf286360402
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: b336e5ba-4938-4708-9f52-c4dce6a8d3f6
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -90,12 +86,11 @@ operation:
           - columnReferences:
               - columnCounter: 837817dc-3655-46db-b401-f4acc413b245
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: d624bce8-b764-4e83-bf31-e9c28b815237
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 983bc530-6641-4ca0-bfe7-3ff0fd8863cd
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -105,12 +100,11 @@ operation:
           - columnReferences:
               - columnCounter: d6921735-a84d-43ad-93db-7157d39b1017
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 899539d9-5090-4792-a414-4ff06f75aff4
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: e7dd6162-2f3c-4a69-839d-8fbeaaf736f8
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -120,12 +114,11 @@ operation:
           - columnReferences:
               - columnCounter: 5a09cdbe-d1a1-4031-b8c9-3c6ff9d79abc
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 994e3d02-a50a-4522-8571-788ef2bd3a53
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 18db19c9-e869-487c-b22b-99b4931e541a
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -135,12 +128,11 @@ operation:
           - columnReferences:
               - columnCounter: 733683dc-e357-4261-a3d1-7a1771b61e20
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c810ddc3-bf4e-4583-ae5f-0209a7716f20
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 883f6615-3f51-4d3d-ba7c-25cf48ebdf01
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: VARCHAR(1)
         description: ""
@@ -150,12 +142,11 @@ operation:
           - columnReferences:
               - columnCounter: dc7bdf5d-9100-4b10-814d-c2057afd7269
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 9e55261e-6809-496a-9698-f8f3d12a4996
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 2e070d81-256e-4f67-832f-5da15e5bda59
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: VARCHAR(1)
         description: ""
@@ -165,12 +156,11 @@ operation:
           - columnReferences:
               - columnCounter: d97bcb29-8c55-441a-8210-7e57e64398c4
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 63d7fbc7-7ed4-48cf-860c-31fe1bc8e9bd
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: da8bcdff-a813-467a-bbfa-5a6679639be1
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: DATE
         description: ""
@@ -180,12 +170,11 @@ operation:
           - columnReferences:
               - columnCounter: 7be85ead-b8c5-4bf2-8ec2-dbc1c3adc920
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 2a36eb10-8b33-478f-9e3f-b58783b4e7ee
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 6884c5b3-0741-487a-a5c6-45705646e418
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: DATE
         description: ""
@@ -195,12 +184,11 @@ operation:
           - columnReferences:
               - columnCounter: 9bc9c6a4-a2bd-4f31-bf28-877b14e5d34c
                 stepCounter: 99cf887d-3239-4d44-85e3-b3e00638350f
-            transform: |
-              {{ ref('STG_LINEITEM_V2') }}.EXTENDED_PRICE
+            transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 300295ad-57a5-4a8f-aa02-d732c1afc90c
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 2bab62c3-5fb5-47a0-9119-cdd8935616c1
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: DATE
         description: ""
@@ -213,8 +201,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f7c66052-dae0-4b01-b3a1-3ce515286d1d
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 61bce4b4-2f39-41ef-8550-960420336ac9
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: VARCHAR(25)
         description: ""
@@ -227,8 +215,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 0d33b9c0-d79e-493b-8486-e4efded8b7ec
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 2b12a08f-c09a-4acf-92e8-ca6ee7adfab8
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: VARCHAR(10)
         description: ""
@@ -241,8 +229,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 387a25ef-42dd-42ca-bc4a-70e1ca9d0c32
-          stepCounter: cc8e7c49-a123-4644-a064-7e9df139d3c7
+          columnCounter: 4b6ae39d-0399-4920-8a66-f86c32b0dcf8
+          stepCounter: a61b1351-bd96-473e-bb56-a6e65c241335
         config: {}
         dataType: VARCHAR(44)
         description: ""
@@ -265,9 +253,9 @@ operation:
             nodeName: LINEITEM
         join:
           joinCondition: FROM {{ ref('SRC', 'LINEITEM') }} "LINEITEM"
-        name: STG_LINEITEM_V2
+        name: STG_LINEITEM
         noLinkRefs: []
-  name: STG_LINEITEM_V2
+  name: STG_LINEITEM
   overrideSQL: false
   schema: ""
   sqlType: Stage
