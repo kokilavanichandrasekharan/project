@@ -7,5 +7,5 @@ mappingDefinitions:
   TARGET:
     database: KOKILAVANI
     schema: WORKTEST
-name: New Environment
+name: Acceptance Environment
 type: Environment
