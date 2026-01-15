@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "18"
+mappingDefinitions:
+  SRC:
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1
+  TARGET:
+    database: KOKILAVANI
+    schema: WORKTEST
+name: DEV Environment
+type: Environment

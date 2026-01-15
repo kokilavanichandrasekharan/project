@@ -1,0 +1,35 @@
+fileVersion: 1
+id: 76846062-6ae8-4b61-b949-8609ceaf9be4
+name: MY_TEST_TABLE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: TARGET
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8566df23-9d48-4892-ab77-cc3e3d4f2d63
+          stepCounter: 76846062-6ae8-4b61-b949-8609ceaf9be4
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: MY_TEST_TABLE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

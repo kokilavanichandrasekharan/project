@@ -4,7 +4,10 @@ name: PSTG_LINEITEM
 operation:
   config:
     postSQL: ""
-    preSQL: ""
+    preSQL: |+
+      DELETE FROM {{ this }}
+      WHERE SYSTEM_CREATE_DATE >= DATEADD(hour, -1, CURRENT_TIMESTAMP);
+
     testsEnabled: true
   database: ""
   deployEnabled: true
