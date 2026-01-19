@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: This Node creates the STG_CUSTOMER table, truncates the table, and then loads data from the CUSTOMER table into it.
+  description: Creates the STG_CUSTOMER table, truncates the table, and then loads data from the CUSTOMER table into it.
   isMultisource: false
   locationName: TARGET
   materializationType: table
@@ -37,7 +37,7 @@ operation:
           stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
         config: {}
         dataType: VARCHAR(25)
-        description: ""
+        description: Customer's full name. Used for personalized marketing campaigns and customer service interactions. Sourced directly from the Customer table in the source system. No transformations applied. Appears in customer profile reports and contact lists. Complies with data privacy regulations regarding personally identifiable information. Enables targeted communication strategies based on customer preferences and demographics.
         name: C_NAME
         nullable: false
         sourceColumnReferences:
