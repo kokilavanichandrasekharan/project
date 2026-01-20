@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: Creates the STG_CUSTOMER table, truncates the table, and then loads data from the CUSTOMER table into it.
+  description: Creates the STG_CUSTOMER table, truncates the table, and then loads data from the CUSTOMER table.
   isMultisource: false
   locationName: TARGET
   materializationType: table

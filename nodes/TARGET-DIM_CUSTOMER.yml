@@ -13,7 +13,25 @@ operation:
   locationName: TARGET
   materializationType: table
   metadata:
-    appliedNodeTests: []
+    appliedNodeTests:
+      - continueOnFailure: true
+        description: ""
+        name: Test
+        runOrder: After
+        templateString: |+
+          SELECT *
+          FROM {{ this }}
+          WHERE DIM_CUSTOMER_KEY IS NULL
+
+      - continueOnFailure: true
+        description: ""
+        name: Test 1
+        runOrder: After
+        templateString: |
+          SELECT DIM_CUSTOMER_KEY, COUNT(*)
+          FROM {{ this }}
+          GROUP BY DIM_CUSTOMER_KEY
+          HAVING COUNT(*) > 1
     columns:
       - acceptedValues:
           strictMatch: true
@@ -147,20 +165,6 @@ operation:
               - columnCounter: 3da4746e-bf43-41c2-bfb0-59c4607b391f
                 stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
             transform: " UPPER(\"STG_CUSTOMER\".\"C_COMMENT\")"
-      - appliedColumnTests: {}
-        columnReference:
-          columnCounter: c3e40411-52d8-4b3d-8626-2d8aaea1c825
-          stepCounter: 35aceb21-998f-46a9-8952-757daeabc159
-        config: {}
-        dataType: TIMESTAMP
-        description: ""
-        name: "|LOAD_TS"
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: 824b74b9-a2a6-4428-95d4-c428196aa213
-                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
-            transform: ""
       - acceptedValues:
           strictMatch: true
           values: []
