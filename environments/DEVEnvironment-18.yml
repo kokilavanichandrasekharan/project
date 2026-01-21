@@ -5,7 +5,7 @@ mappingDefinitions:
     database: SNOWFLAKE_SAMPLE_DATA
     schema: TPCH_SF1
   TARGET:
-    database: KOKILAVANI
+    database: DEV_KOKILAVANI
     schema: WORKTEST
 name: DEV Environment
 type: Environment

@@ -1,5 +1,5 @@
 fileVersion: 1
-id: "5"
+id: "22"
 mappingDefinitions:
   SRC:
     database: SNOWFLAKE_SAMPLE_DATA
@@ -7,5 +7,5 @@ mappingDefinitions:
   TARGET:
     database: DEV_KOKILAVANI
     schema: WORKTEST
-name: Acceptance Environment
+name: DEV_WAREHOUSE_ERROR_LAB
 type: Environment
