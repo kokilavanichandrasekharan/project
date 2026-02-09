@@ -20,7 +20,7 @@ operation:
     orderBy:
       items:
         - colName:
-            columnCounter: fc4c42a7-761d-492d-992f-c52d4110166e
+            columnCounter: 6db4823c-82d1-45e7-ba99-3dcc7291eb6c
             stepCounter: c7cce12f-e2ee-4510-afac-e050c6a83d20
           sortOrd: desc
     partitionBy:

@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "5"
+includeSelector: "{ location: SRC name: NATION } OR { location: SRC name: PART } OR { location: SRC name: LINEITEM } OR { location: TARGET name: STG_LINEITEM }"
+name: staging_load_job
+type: Job
