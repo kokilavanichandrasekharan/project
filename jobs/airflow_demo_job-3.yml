@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "3"
+includeSelector: "{ location: SRC name: REGION } OR { location: TARGET name: STG_REGION } OR { location: TARGET name: DIM_REGION }"
+name: airflow_demo_job
+type: Job
