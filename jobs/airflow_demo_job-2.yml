@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "2"
+includeSelector: "{ location: TARGET name: STG_LINEITEM_ORDERS } OR { location: TARGET name: DIM_SUPPLIER } OR { location: SRC name: PARTSUPP } OR { location: TARGET name: STG_PARTSUPP } OR { location: TARGET name: STG_LINEITEM_ORDERS_DIM_LOOKUP } OR { location: SRC name: CUSTOMER } OR { location: TARGET name: STG_CUSTOMER } OR { location: TARGET name: DIM_CUSTOMER }"
+name: airflow_demo_job
+type: Job
