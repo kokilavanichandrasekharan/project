@@ -143,6 +143,26 @@ operation:
               - columnCounter: b56ed9d1-33f0-4bb5-8473-22882667225b
                 stepCounter: cb39ccf3-8f99-4a27-9713-2d5bae619ca0
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 294f7d9a-3f2e-4073-8709-81fb22c9c215
+          stepCounter: 5cc15314-df58-4fd3-981d-59abfd9cb3cb
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: load_ts
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: CURRENT_TIMESTAMP
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
