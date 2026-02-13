@@ -1,6 +1,0 @@
-excludeSelector: ""
-fileVersion: 1
-id: "6"
-includeSelector: "{ location: SRC name: LINEITEM } OR { location: TARGET name: STG_LINEITEM } OR { location: TARGET name: DIM_CUSTOMER }"
-name: airflow_demo_job
-type: Job
