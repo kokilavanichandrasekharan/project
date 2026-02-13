@@ -1,10 +1,7 @@
 fileVersion: 1
-
-defaultStorageMapping: snowflake
-
+defaultStorageMapping: TARGET
 locations:
-  - name: snowflake
-    type: snowflake
-    database: DEV_DB
-    schema: STAGING
+  - SRC
+  - TARGET
+
 
