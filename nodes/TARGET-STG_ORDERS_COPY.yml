@@ -1,6 +1,6 @@
 fileVersion: 1
 id: d051436f-a1db-441c-8936-ad5185672fa0
-name: STG_ORDERS1
+name: STG_ORDERS_COPY
 operation:
   config:
     insertStrategy: INSERT
@@ -155,9 +155,9 @@ operation:
             nodeName: STG_ORDERS
         join:
           joinCondition: FROM {{ ref('TARGET', 'STG_ORDERS') }} "STG_ORDERS"
-        name: STG_ORDERS1
+        name: STG_ORDERS_COPY
         noLinkRefs: []
-  name: STG_ORDERS1
+  name: STG_ORDERS_COPY
   overrideSQL: false
   schema: ""
   sqlType: Stage

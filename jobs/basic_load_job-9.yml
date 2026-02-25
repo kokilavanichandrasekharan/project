@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "9"
-includeSelector: "{ location: SRC name: ORDERS } OR { location: TARGET name: STG_ORDERS } OR { location: TARGET name: STG_ORDERS1 }"
+includeSelector: STG_ORDERS_DUP
 name: basic_load_job
 type: Job
