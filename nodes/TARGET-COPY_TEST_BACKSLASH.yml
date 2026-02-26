@@ -22,7 +22,7 @@ operation:
     fileFormatLoc: ""
     fileFormatName: ""
     fileFormatType: File Format Values
-    fileNames: ""
+    fileNames: test_backslash.csv
     filePattern: ""
     fileType: CSV
     forceLoad: ""
@@ -42,11 +42,11 @@ operation:
     sizeLimit: ""
     skipBlankLines: false
     skipHeader: "1"
-    stageName: Enter stage name-stage_name
-    stageStorageLocationName: Enter Storage Location name
+    stageName: MY_STAGE
+    stageStorageLocationName: DEV_KOKILAVANI.WORKTEST
     storageintegration: ""
     stripouterarray: true
-    subfolder: Enter folder name in stage if applicable-folder/subfolder
+    subfolder: ""
     timeformat: ""
     timestampformat: ""
     trimSpace: false
@@ -79,91 +79,6 @@ operation:
           - columnReferences: []
             transform: $1
         sysJSON: true
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 196744c4-aca2-4a64-8419-5411e513d2db
-          stepCounter: 4f60c12c-9303-4a00-96b1-8e2af638e9dd
-        config: {}
-        dataType: TIMESTAMP_NTZ
-        defaultValue: ""
-        description: ""
-        name: LOAD_TIMESTAMP
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: current_timestamp()::timestamp_ntz
-        sysLdTs: true
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: f65594a7-4b64-4ffb-8dde-1d376e987821
-          stepCounter: 4f60c12c-9303-4a00-96b1-8e2af638e9dd
-        config: {}
-        dataType: STRING
-        defaultValue: ""
-        description: ""
-        name: FILENAME
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: METADATA$FILENAME
-        sysFlNm: true
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 6aa42446-65f0-4506-9b45-8930601ad60b
-          stepCounter: 4f60c12c-9303-4a00-96b1-8e2af638e9dd
-        config: {}
-        dataType: NUMBER
-        defaultValue: ""
-        description: ""
-        name: FILE_ROW_NUMBER
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: METADATA$FILE_ROW_NUMBER
-        sysFlRwNm: true
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 099158d6-ceaf-4e4f-90e4-efcb0c472726
-          stepCounter: 4f60c12c-9303-4a00-96b1-8e2af638e9dd
-        config: {}
-        dataType: TIMESTAMP_NTZ
-        defaultValue: ""
-        description: ""
-        name: FILE_LAST_MODIFIED
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: METADATA$FILE_LAST_MODIFIED
-        sysFlLtMd: true
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 6f49d774-326b-4018-bc31-42cdf377df65
-          stepCounter: 4f60c12c-9303-4a00-96b1-8e2af638e9dd
-        config: {}
-        dataType: TIMESTAMP_NTZ
-        defaultValue: ""
-        description: ""
-        name: SCAN_TIME
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: METADATA$START_SCAN_TIME
-        sysFlScTm: true
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
