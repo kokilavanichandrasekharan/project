@@ -38,7 +38,7 @@ operation:
         config: {}
         dataType: VARCHAR(25)
         description: Customer's full name. Used for personalized marketing campaigns and customer service interactions. Sourced directly from the Customer table in the source system. No transformations applied. Appears in customer profile reports and contact lists. Complies with data privacy regulations regarding personally identifiable information. Enables targeted communication strategies based on customer preferences and demographics.
-        name: C_NAME
+        name: CUSTOMER_NAME
         nullable: false
         sourceColumnReferences:
           - columnReferences:
@@ -148,6 +148,26 @@ operation:
               - columnCounter: "0"
                 stepCounter: "0"
             transform: CURRENT_TIMESTAMP()
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1df4a3db-f23c-4313-9552-ad59bca900d6
+          stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CUSTOMER_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "\"CUSTOMER\".\"C_NAME\""
         systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
