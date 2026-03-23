@@ -1,5 +1,5 @@
 fileVersion: 1
-id: 4f60c12c-9303-4a00-96b1-8e2af638e9dd
+id: 136bb853-450b-4bba-907d-df655697df16
 name: COPY_TEST_BACKSLASH
 operation:
   config:
@@ -19,9 +19,9 @@ operation:
     extlocation: true
     fieldDelim: ","
     fieldEnclosed: \042
-    fileFormatLoc: ""
-    fileFormatName: ""
-    fileFormatType: File Format Values
+    fileFormatLoc: DEV_KOKILAVANI.WORKTEST
+    fileFormatName: FF_BACKSLASH
+    fileFormatType: File Format Name
     fileNames: test_backslash.csv
     filePattern: ""
     fileType: CSV
@@ -43,8 +43,8 @@ operation:
     skipBlankLines: false
     skipHeader: "1"
     stageName: MY_STAGE
-    stageStorageLocationName: DEV_KOKILAVANI.WORKTEST
-    storageintegration: ""
+    stageStorageLocationName: DEV_KOKILAVANI
+    storageintegration: DEV_KOKILAVANI.WORKTEST
     stripouterarray: true
     subfolder: ""
     timeformat: ""
@@ -67,8 +67,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 70058718-75d8-4bd7-8b9a-2161158d2163
-          stepCounter: 4f60c12c-9303-4a00-96b1-8e2af638e9dd
+          columnCounter: 9b8c5792-84da-4866-abae-7f3827a4a56b
+          stepCounter: 136bb853-450b-4bba-907d-df655697df16
         config: {}
         dataType: VARIANT
         defaultValue: ""
