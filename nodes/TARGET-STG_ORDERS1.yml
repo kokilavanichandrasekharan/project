@@ -1,6 +1,6 @@
 fileVersion: 1
 id: 76402c24-2a5c-41cb-90e3-6f960e97e7bc
-name: STG_ORDERS
+name: STG_ORDERS1
 operation:
   config:
     insertStrategy: INSERT
@@ -155,9 +155,9 @@ operation:
             nodeName: ORDERS
         join:
           joinCondition: FROM {{ ref('SRC', 'ORDERS') }} "ORDERS"
-        name: STG_ORDERS
+        name: STG_ORDERS1
         noLinkRefs: []
-  name: STG_ORDERS
+  name: STG_ORDERS1
   overrideSQL: false
   schema: ""
   sqlType: Stage
