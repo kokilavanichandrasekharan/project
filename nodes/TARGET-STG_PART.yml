@@ -148,13 +148,17 @@ operation:
     sourceMapping:
       - aliases:
           PART: 4a808587-cd81-4670-b6d8-9d268908148f
+          PART_B: 4a808587-cd81-4670-b6d8-9d268908148f
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: SRC
             nodeName: PART
         join:
-          joinCondition: FROM {{ ref('SRC', 'PART') }} "PART"
+          joinCondition: |-
+            FROM {{ ref('SRC', 'PART') }} PART
+            LEFT JOIN {{ ref('SRC', 'PART') }} PART_B
+            ON PART.P_PARTKEY = PART_B.P_PARTKEY
         name: STG_PART
         noLinkRefs: []
   name: STG_PART
