@@ -167,14 +167,20 @@ operation:
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
-          ORDERS: cb39ccf3-8f99-4a27-9713-2d5bae619ca0
+          A: cb39ccf3-8f99-4a27-9713-2d5bae619ca0
+          B: 84abc574-46ea-4b8b-821e-094e8ae55b1e
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: SRC
             nodeName: ORDERS
+          - locationName: TARGET
+            nodeName: STG_CUSTOMER
         join:
-          joinCondition: FROM {{ ref('SRC', 'ORDERS') }} "ORDERS"
+          joinCondition: |-
+            FROM {{ ref('SRC', 'ORDERS') }} A
+            LEFT JOIN {{ ref('TARGET', 'STG_CUSTOMER') }} B
+            ON A.O_ORDERKEY = B.CUSTKEY
         name: STG_ORDERS
         noLinkRefs: []
   name: STG_ORDERS

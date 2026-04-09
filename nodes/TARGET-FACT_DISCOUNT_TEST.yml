@@ -1,18 +1,11 @@
 fileVersion: 1
-id: e690c237-19fb-432a-9909-397d50201298
-name: SQL_NODE
+id: e1021630-fdac-46ad-b5cf-b3fbcbc6aa02
+name: FACT_DISCOUNT_TEST
 operation:
   config:
-    SQL1: |-
-      CREATE OR REPLACE PROCEDURE {{this}} ("MESSAGE" STRING)
-      RETURNS STRING
-      LANGUAGE SQL
-      EXECUTE AS OWNER
-      AS '
-      begin
-        return message;
-      end;
-      ';
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
   database: ""
   deployEnabled: true
   description: ""
@@ -27,31 +20,31 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 49218ce5-21d4-482c-83d7-6f56383b26e9
-          stepCounter: e690c237-19fb-432a-9909-397d50201298
+          columnCounter: 1759e33d-3868-426d-a532-5010cd6ace9a
+          stepCounter: e1021630-fdac-46ad-b5cf-b3fbcbc6aa02
         config: {}
-        dataType: NUMBER IDENTITY
+        dataType: TIMESTAMP
         defaultValue: ""
         description: ""
-        isSurrogateKey: true
-        name: SQL_SEQ
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
-            transform: ""
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 6ffaa06d-b61c-4774-b9dc-b12dc35e6b65
-          stepCounter: e690c237-19fb-432a-9909-397d50201298
+          columnCounter: c11c7e6d-80ac-4ffa-8716-9bdb611469a6
+          stepCounter: e1021630-fdac-46ad-b5cf-b3fbcbc6aa02
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
         description: ""
-        isSystemStartDate: true
-        name: SYSTEM_START_DATE
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
@@ -64,13 +57,13 @@ operation:
           customSQL: ""
         dependencies: []
         join:
-          joinCondition: ""
-        name: SQL_NODE
+          joinCondition: 1=1
+        name: FACT_DISCOUNT_TEST
         noLinkRefs: []
-  name: SQL_NODE
+  name: FACT_DISCOUNT_TEST
   overrideSQL: false
   schema: ""
-  sqlType: "18"
+  sqlType: Fact
   type: sql
   version: 1
 type: Node

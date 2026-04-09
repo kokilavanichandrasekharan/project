@@ -1,0 +1,93 @@
+fileVersion: 1
+id: a9f32dfd-3854-4acb-8e71-c2c1185988d4
+name: STG_NODE2
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79c32156-687f-4e60-a522-3b83658ae82e
+          stepCounter: a9f32dfd-3854-4acb-8e71-c2c1185988d4
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: customer_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+          - columnReferences:
+              - columnCounter: e6836772-4545-4a20-b375-a015978f368d
+                stepCounter: 25f055b1-0e68-42a1-9eef-8f8c4ee1ddcd
+            transform: "\"ORDERS\".\"O_ORDERKEY\" || '_updated'"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b0dde8d-27ba-4b7c-a405-96520d96ca46
+          stepCounter: a9f32dfd-3854-4acb-8e71-c2c1185988d4
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: order_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+          - columnReferences:
+              - columnCounter: b5cb63fe-9a25-456d-9450-1864e8f47fa9
+                stepCounter: cb39ccf3-8f99-4a27-9713-2d5bae619ca0
+            transform: "\"ORDERS\".\"O_ORDERKEY\" || '_updated'"
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: STG_NODE2
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: NEW_SOURCE
+        noLinkRefs: []
+  name: STG_NODE2
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

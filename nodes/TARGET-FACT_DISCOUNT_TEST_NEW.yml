@@ -1,0 +1,101 @@
+fileVersion: 1
+id: 430f3827-2d91-4661-8f88-31f94ba26bc5
+name: FACT_DISCOUNT_TEST_NEW
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe6012b4-3460-41ce-aac4-7f5cc59df511
+          stepCounter: 430f3827-2d91-4661-8f88-31f94ba26bc5
+        config: {}
+        dataType: NUMBER(10,0)
+        description: ""
+        isBusinessKey: true
+        name: ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd9fe752-59a9-402a-8291-da17c87476fe
+                stepCounter: fec0b4fb-8521-4432-919b-c10684f261b1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 37c4ce49-79d8-4355-a5b7-21ea10ce4399
+          stepCounter: 430f3827-2d91-4661-8f88-31f94ba26bc5
+        config: {}
+        dataType: NUMBER(10,2)
+        description: ""
+        name: ORDER_DISCOUNT_AMOUNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cdcf834f-45e2-408a-837a-dd358b3dc606
+                stepCounter: fec0b4fb-8521-4432-919b-c10684f261b1
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a7a014a-b95a-449e-a348-762d1ad0ee4d
+          stepCounter: 430f3827-2d91-4661-8f88-31f94ba26bc5
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 508256dd-0de4-4d87-bb85-4637c3245dd0
+          stepCounter: 430f3827-2d91-4661-8f88-31f94ba26bc5
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          TEST_DISCOUNT_SRC: fec0b4fb-8521-4432-919b-c10684f261b1
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: TEST_DISCOUNT_SRC
+        join:
+          joinCondition: FROM {{ ref('TARGET', 'TEST_DISCOUNT_SRC') }} "TEST_DISCOUNT_SRC"
+        name: FACT_DISCOUNT_TEST_NEW
+        noLinkRefs: []
+  name: FACT_DISCOUNT_TEST_NEW
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

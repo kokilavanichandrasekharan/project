@@ -1,0 +1,166 @@
+fileVersion: 1
+id: 0bb743cf-41ae-40e9-bea8-cd29a9e392fe
+name: PVT_TEST_SOURCE_VALUES
+operation:
+  config:
+    Colvol1: "'2023_Q1','2023_Q2','2023_Q3','2023_Q4'"
+    aggfunc:
+      items:
+        - {}
+    aggfunc1:
+      items:
+        - funcname1: SUM
+    defaultval: ""
+    defvalue: false
+    excolval: false
+    exlcol:
+      items:
+        - {}
+    inferPivot: false
+    samKeyColval: false
+    sincol: true
+    subqueryval1: ""
+    tabKeyColumn:
+      items:
+        - keyColTextBox: quarter
+    tabValueColumn:
+      items:
+        - valColTextBox: amount
+    testsEnabled: false
+    trunc: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6200930c-32f7-4ddd-a7fe-87c24ca4a63b
+          stepCounter: 0bb743cf-41ae-40e9-bea8-cd29a9e392fe
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: empid
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fd962ad-a17f-488b-916d-a34fea1bd53f
+          stepCounter: 0bb743cf-41ae-40e9-bea8-cd29a9e392fe
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: 2023_Q1
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdfe6737-435d-4067-8972-9ff14a7d5a1e
+          stepCounter: 0bb743cf-41ae-40e9-bea8-cd29a9e392fe
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: 2023_Q2
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76e3c0e8-af30-4d2a-be89-1d612c70f6bc
+          stepCounter: 0bb743cf-41ae-40e9-bea8-cd29a9e392fe
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: 2023_Q3
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d87b79d4-a7da-4c29-b1d8-bb3b77143648
+          stepCounter: 0bb743cf-41ae-40e9-bea8-cd29a9e392fe
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: 2023_Q4
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: |-
+            FROM VALUES
+            (1,10000,'2023_Q1'),
+            (1,400,'2023_Q1'),
+            (2,4500,'2023_Q1'),
+            (2,35000,'2023_Q1'),
+            (1,5000,'2023_Q2'),
+            (1,3000,'2023_Q2'),
+            (2,200,'2023_Q2'),
+            (2,90500,'2023_Q2')
+            AS T(empid, amount, quarter)
+        name: PVT_TEST_SOURCE_VALUES
+        noLinkRefs: []
+  name: PVT_TEST_SOURCE_VALUES
+  overrideSQL: false
+  schema: ""
+  sqlType: pivot:::409
+  type: sql
+  version: 1
+type: Node

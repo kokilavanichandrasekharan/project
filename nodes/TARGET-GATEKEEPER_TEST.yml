@@ -1,0 +1,70 @@
+fileVersion: 1
+id: ce4411dd-00bf-4ce3-92d7-d1b548c6d91a
+name: GATEKEEPER_TEST
+operation:
+  config:
+    incColumn: ""
+    insertStrategy: UNION ALL
+    persistTableLocation: "ex: TARGET"
+    persistTableName: "ex: DIM_ORDERS"
+    refTable: false
+    srcTable: false
+    suffixlength: ex:1
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: run view
+  metadata:
+    appliedNodeTests:
+      - continueOnFailure: false
+        description: ""
+        name: Test
+        runOrder: After
+        templateString: |-
+          SELECT *
+          FROM {{ this }}
+          WHERE STATUS LIKE 'STOP%'
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e1af663-1fc0-4fc3-b2c9-3740e9117079
+          stepCounter: ce4411dd-00bf-4ce3-92d7-d1b548c6d91a
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: STATUS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |
+
+              'STOP: SOURCE_DATA_NOT_READY'
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: GATEKEEPER_TEST
+        noLinkRefs: []
+  name: GATEKEEPER_TEST
+  overrideSQL: false
+  schema: ""
+  sqlType: incrementalnode:::281
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,54 @@
+fileVersion: 1
+id: fec0b4fb-8521-4432-919b-c10684f261b1
+name: TEST_DISCOUNT_SRC
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: TARGET
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bd9fe752-59a9-402a-8291-da17c87476fe
+          stepCounter: fec0b4fb-8521-4432-919b-c10684f261b1
+        config: {}
+        dataType: NUMBER(10,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdcf834f-45e2-408a-837a-dd358b3dc606
+          stepCounter: fec0b4fb-8521-4432-919b-c10684f261b1
+        config: {}
+        dataType: NUMBER(10,2)
+        defaultValue: ""
+        description: ""
+        name: ORDER_DISCOUNT_AMOUNT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: TEST_DISCOUNT_SRC
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
