@@ -1,19 +1,46 @@
 fileVersion: 1
-id: 192bdb85-2fe7-42dd-830b-4a8347561dbf
+id: 02abe412-9211-4014-b8e7-e7422d9a42c5
 name: P_TEST_PIT
 operation:
   config:
-    insertStrategy: INSERT
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
-    truncateBefore: true
+    advanceWarehouse: false
+    backfill: false
+    backfillSource: ""
+    backfillSourceSchema: ""
+    clusterKey: false
+    clusterKeyConfig:
+      items:
+        - {}
+    clusterKeyConfigExpressions:
+      items:
+        - {}
+    clusterKeyExpressions: false
+    cpygrants: false
+    downstreamOption: true
+    groupByAll: false
+    immutabilityConstraint: false
+    immutableExpression: ""
+    initialize: ON_CREATE
+    initializeWarehouseSize: ""
+    insertStrategy: UNION ALL
+    lagSpecification:
+      items:
+        - lagPeriod: Minutes
+          lagValue: "60"
+    refreshWarehouseSize: ""
+    refresh_mode: AUTO
+    selectDistinct: false
+    timeTravel: false
+    timeTravelreference: ""
+    timeTraveltype: ""
+    timeTravelvalue: ""
+    warehouseName: dev_wh_xs
   database: ""
   deployEnabled: true
   description: ""
   isMultisource: false
   locationName: TARGET
-  materializationType: view
+  materializationType: dynamic table
   metadata:
     appliedNodeTests: []
     columns:
@@ -22,8 +49,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: dea4dd92-759d-4d60-be45-71a5dcf4ba76
-          stepCounter: 192bdb85-2fe7-42dd-830b-4a8347561dbf
+          columnCounter: f6463aa9-2542-4441-b02e-1122546cacf0
+          stepCounter: 02abe412-9211-4014-b8e7-e7422d9a42c5
         config: {}
         dataType: NUMBER
         defaultValue: ""
@@ -35,15 +62,15 @@ operation:
           - columnReferences:
               - columnCounter: "0"
                 stepCounter: "0"
-            transform: S_TEST_SAT.ID
+            transform: " S_TEST_SAT.ID"
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b67bee1c-fcd9-421c-b892-112010d9315b
-          stepCounter: 192bdb85-2fe7-42dd-830b-4a8347561dbf
+          columnCounter: 44fafc0f-2488-4861-97ca-007b0f975f18
+          stepCounter: 02abe412-9211-4014-b8e7-e7422d9a42c5
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -65,13 +92,13 @@ operation:
           customSQL: ""
         dependencies: []
         join:
-          joinCondition: ""
+          joinCondition: FROM S_TEST_SAT
         name: P_TEST_PIT
         noLinkRefs: []
   name: P_TEST_PIT
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: dynamic:::347
   type: sql
   version: 1
 type: Node

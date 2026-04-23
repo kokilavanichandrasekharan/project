@@ -1,5 +1,5 @@
 fileVersion: 1
-id: d2c3cd7d-ec64-43ec-9e2e-94d785c64d55
+id: 2e60dc9d-bfa5-4336-a7cf-9fcc7e0f755b
 name: S_TEST_SAT
 operation:
   config:
@@ -22,8 +22,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 1d8336ec-2b85-4ff8-b9d3-391899b7091c
-          stepCounter: d2c3cd7d-ec64-43ec-9e2e-94d785c64d55
+          columnCounter: a548ee92-44c4-41cc-940e-959f1c2c7285
+          stepCounter: 2e60dc9d-bfa5-4336-a7cf-9fcc7e0f755b
         config: {}
         dataType: NUMBER
         defaultValue: ""
@@ -35,15 +35,15 @@ operation:
           - columnReferences:
               - columnCounter: "0"
                 stepCounter: "0"
-            transform: CAST(1 AS NUMBER)
+            transform: "1"
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 4428362e-a19c-4ec7-85fb-e5629621ab46
-          stepCounter: d2c3cd7d-ec64-43ec-9e2e-94d785c64d55
+          columnCounter: 25bdb229-1c5a-49fb-b67c-a8364788366f
+          stepCounter: 2e60dc9d-bfa5-4336-a7cf-9fcc7e0f755b
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
