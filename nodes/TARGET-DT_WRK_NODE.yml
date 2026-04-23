@@ -181,7 +181,7 @@ operation:
           - locationName: TARGET
             nodeName: STG_CUSTOMER
         join:
-          joinCondition: FROM {{ ref('TARGET', 'STG_CUSTOMER') }}
+          joinCondition: "FROM {{ ref('TARGET', 'STG_CUSTOMER') }} "
         name: DT_WRK_NODE
         noLinkRefs: []
   name: DT_WRK_NODE
