@@ -1,0 +1,193 @@
+fileVersion: 1
+id: cc6c8827-c044-46f5-9485-c3d3db057803
+name: DT_WRK_CUSTOMER
+operation:
+  config:
+    advanceWarehouse: false
+    backfill: false
+    backfillSource: ""
+    backfillSourceSchema: ""
+    clusterKey: false
+    clusterKeyConfig:
+      items:
+        - {}
+    clusterKeyConfigExpressions:
+      items:
+        - {}
+    clusterKeyExpressions: false
+    cpygrants: false
+    downstreamOption: false
+    groupByAll: false
+    immutabilityConstraint: false
+    immutableExpression: ""
+    initialize: ON_CREATE
+    initializeWarehouseSize: ""
+    insertStrategy: UNION ALL
+    lagSpecification:
+      items:
+        - lagPeriod: Minutes
+          lagValue: "61"
+    refreshWarehouseSize: ""
+    refresh_mode: AUTO
+    selectDistinct: false
+    timeTravel: false
+    timeTravelreference: ""
+    timeTraveltype: ""
+    timeTravelvalue: ""
+    warehouseName: dev_wh_xs
+  database: ""
+  deployEnabled: true
+  description: Creates the STG_CUSTOMER table, truncates the table, and then loads data from the CUSTOMER table.
+  isMultisource: false
+  locationName: TARGET
+  materializationType: dynamic table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fbc0bad-b28d-450c-850f-c2c3528bf9cd
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: NUMBER(38,0)
+        description: Customer identifier. Primary key for the Customer table. Links customer information across the data warehouse. Used in reports detailing customer demographics, purchasing patterns, and engagement metrics. Directly sourced from the Customer table in the source system. No transformations applied.
+        name: C_CUSTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8df46a1b-de26-4758-8a38-d19b309218cd
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 601397c0-385d-4698-adc6-4a9988af3b50
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: VARCHAR(25)
+        description: Customer's full name. Used for personalized marketing campaigns and customer service interactions. Sourced directly from the Customer table in the source system. No transformations applied. Appears in customer profile reports and contact lists. Complies with data privacy regulations regarding personally identifiable information. Enables targeted communication strategies based on customer preferences and demographics.
+        name: C_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 156e5cca-2b79-449d-ba7a-712cfaa7453c
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f780910f-aba7-4439-a5f7-e06ee56a32bc
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: VARCHAR(40)
+        description: ""
+        name: C_ADDRESS
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b4b1fed6-e7b1-42d9-ae7d-7d9fb83a640d
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b6aac43-d6af-47a2-bf19-08d1c1a3be5e
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: C_NATIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d039092-8a18-4fa1-9e03-ba7ca1044dc9
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: efb38eac-1ee7-44dc-b435-d8a2799ae824
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: C_PHONE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9945a4f-9457-4741-806c-9e943232df52
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cd5a7ee-7e84-478d-babe-13da164af389
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: NUMBER(12,2)
+        description: ""
+        name: C_ACCTBAL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d70d3d60-3e96-4401-bc56-f25e49236f95
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: edceb11d-eda2-426d-852a-3cc069bf6a27
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: C_MKTSEGMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d61cd71b-9d82-48b7-a35f-9cc995d77fde
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1e23c28-e29d-4f5d-84c0-5a61302d6b8e
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: VARCHAR(117)
+        description: ""
+        name: C_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3da4746e-bf43-41c2-bfb0-59c4607b391f
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4287891-b4d4-4b64-a3be-d7060808aa38
+          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: "|LOAD_TS"
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 824b74b9-a2a6-4428-95d4-c428196aa213
+                stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STG_CUSTOMER: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: STG_CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('TARGET', 'STG_CUSTOMER') }} "STG_CUSTOMER"
+        name: DT_WRK_CUSTOMER
+        noLinkRefs: []
+  name: DT_WRK_CUSTOMER
+  overrideSQL: false
+  schema: ""
+  sqlType: dynamicnewversion:::347
+  type: sql
+  version: 1
+type: Node
