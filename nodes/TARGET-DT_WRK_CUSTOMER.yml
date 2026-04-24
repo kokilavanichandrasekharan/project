@@ -26,7 +26,7 @@ operation:
     lagSpecification:
       items:
         - lagPeriod: Minutes
-          lagValue: "61"
+          lagValue: "60"
     refreshWarehouseSize: ""
     refresh_mode: AUTO
     selectDistinct: false
