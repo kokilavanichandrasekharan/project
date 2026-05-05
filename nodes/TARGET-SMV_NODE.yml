@@ -1,0 +1,75 @@
+fileVersion: 1
+id: a7591515-a166-4cab-8b20-57a3eca2eaab
+name: SMV_NODE
+operation:
+  config:
+    DimConfig:
+      items:
+        - dimAlias: ""
+          dimCol: null
+          dimComment: ""
+          dimLayer: "1"
+          dimSynonym: ""
+          dimTransform: ""
+    deriveCol: true
+    dimToggle: true
+    factDetConfig:
+      items:
+        - factAlias: ""
+          factCol: null
+          factComment: ""
+          factLayer: "1"
+          factSynonym: ""
+          factTranform: ""
+    factToggle: true
+    foreignKeyConfig:
+      items:
+        - foreignKey: null
+          refAlias: ""
+          refTable: ""
+    foreignToggle: true
+    metricConfig:
+      items:
+        - metricAlias: ""
+          metricCol: null
+          metricComment: ""
+          metricLayer: "1"
+          metricSynonym: ""
+          metricTransform: null
+          metricTransformExprn: ""
+    metricToggle: true
+    primaryKeyConfig:
+      items:
+        - primAlias: ""
+          primComment: ""
+          primSynonym: ""
+          primaryKey: null
+    semanticMaterialization: semantic view
+    tableOnlyToggle: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: semantic view
+  metadata:
+    appliedNodeTests: []
+    columns: []
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: SMV_NODE
+        noLinkRefs: []
+  name: SMV_NODE
+  overrideSQL: false
+  schema: ""
+  sqlType: semanticview:::632
+  type: sql
+  version: 1
+type: Node

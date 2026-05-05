@@ -20,18 +20,18 @@ operation:
     fieldDelim: ","
     fieldEnclosed: \042
     fileFormatLoc: ""
-    fileFormatName: ""
+    fileFormatName: MY_CSV_FORMAT
     fileFormatType: File Format Name
-    fileNames: ""
+    fileNames: test.csv
     filePattern: ""
     fileType: CSV
     forceLoad: ""
     inferschema: false
-    intextstage: false
+    intextstage: true
     loadUncertainFiles: ""
     mulline: true
     nullchar: ('\N')
-    onError: ""
+    onError: CONTINUE
     parsehdr: true
     parsehdr1: true
     purgeBehavior: ""
@@ -42,8 +42,8 @@ operation:
     sizeLimit: ""
     skipBlankLines: false
     skipHeader: "1"
-    stageName: Enter stage name-stage_name
-    stageStorageLocationName: Enter Storage Location name
+    stageName: MY_STAGE
+    stageStorageLocationName: "@DEV_KOKILAVANI.WORKTEST.MY_STAGE"
     storageintegration: ""
     stripouterarray: true
     subfolder: Enter folder name in stage if applicable-folder/subfolder
@@ -84,86 +84,101 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c454860a-67bc-453f-a345-66b650fd16bb
-          stepCounter: 639b31ff-6980-47f2-84c7-7a6c5d895383
-        config: {}
-        dataType: TIMESTAMP_NTZ
-        defaultValue: ""
-        description: ""
-        name: LOAD_TIMESTAMP
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: current_timestamp()::timestamp_ntz
-        sysLdTs: true
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: d6e64091-9479-46f6-bc90-38b5fb0f4e8e
+          columnCounter: 48902a17-922c-4519-a879-0808d10b3657
           stepCounter: 639b31ff-6980-47f2-84c7-7a6c5d895383
         config: {}
         dataType: STRING
         defaultValue: ""
         description: ""
+        keyColumnType: None
         name: FILENAME
         nullable: true
         sourceColumnReferences:
-          - columnReferences: []
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
             transform: METADATA$FILENAME
-        sysFlNm: true
+        systemColumnType: None
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 00b7ee9f-d8c3-4950-b7fc-5368bb8977b8
+          columnCounter: 741d4b1b-30c4-46aa-96dc-f5ad302fbc20
           stepCounter: 639b31ff-6980-47f2-84c7-7a6c5d895383
         config: {}
         dataType: NUMBER
         defaultValue: ""
         description: ""
+        keyColumnType: None
         name: FILE_ROW_NUMBER
         nullable: true
         sourceColumnReferences:
-          - columnReferences: []
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
             transform: METADATA$FILE_ROW_NUMBER
-        sysFlRwNm: true
+        systemColumnType: None
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9a8682eb-a073-457a-9a66-fbe997fa8460
+          columnCounter: 63442421-ad47-493e-a111-451f3547afc8
           stepCounter: 639b31ff-6980-47f2-84c7-7a6c5d895383
         config: {}
         dataType: TIMESTAMP_NTZ
         defaultValue: ""
         description: ""
+        keyColumnType: None
         name: FILE_LAST_MODIFIED
         nullable: true
         sourceColumnReferences:
-          - columnReferences: []
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
             transform: METADATA$FILE_LAST_MODIFIED
-        sysFlLtMd: true
+        systemColumnType: None
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: f8389974-73ca-4d99-b3f6-7985b007e6d9
+          columnCounter: d008ef55-8336-4d7a-9ce6-c4542605c268
           stepCounter: 639b31ff-6980-47f2-84c7-7a6c5d895383
         config: {}
         dataType: TIMESTAMP_NTZ
         defaultValue: ""
         description: ""
+        keyColumnType: None
         name: SCAN_TIME
         nullable: true
         sourceColumnReferences:
-          - columnReferences: []
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
             transform: METADATA$START_SCAN_TIME
-        sysFlScTm: true
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 548d2ed2-8ae9-488d-8cdd-a20e2fdfbb85
+          stepCounter: 639b31ff-6980-47f2-84c7-7a6c5d895383
+        config: {}
+        dataType: TIMESTAMP_NTZ
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: LOAD_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: current_timestamp()::timestamp_ntz
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

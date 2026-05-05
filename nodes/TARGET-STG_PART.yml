@@ -36,7 +36,7 @@ operation:
           columnCounter: 3b6233a3-c0c0-4857-a2ad-0ce3011afa33
           stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
         config: {}
-        dataType: VARCHAR(55)
+        dataType: VARCHAR(60)
         description: ""
         name: P_NAME
         nullable: false
@@ -44,7 +44,8 @@ operation:
           - columnReferences:
               - columnCounter: 4656b42a-1369-482c-aa58-76e4780940ff
                 stepCounter: 4a808587-cd81-4670-b6d8-9d268908148f
-            transform: ""
+            transform: |+
+
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 156b35b9-d26c-4003-be2b-15c90b5a1428
