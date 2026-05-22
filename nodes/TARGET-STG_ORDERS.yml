@@ -181,7 +181,11 @@ operation:
           - columnReferences:
               - columnCounter: "0"
                 stepCounter: "0"
-            transform: "\"ORDERS\".\"O_ORDERKEY\""
+            transform: |-
+              CASE 
+                WHEN "ORDERS"."O_ORDERKEY" % 2 = 0 THEN NULL
+                ELSE "ORDERS"."O_ORDERKEY"
+              END
         systemColumnType: None
       - acceptedValues:
           strictMatch: true
