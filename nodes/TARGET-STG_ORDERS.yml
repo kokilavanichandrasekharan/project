@@ -203,6 +203,46 @@ operation:
                 stepCounter: "0"
             transform: SALESORDER_ID
         systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b607c581-6299-4a0e-bdb0-0580b36d2593
+          stepCounter: 5cc15314-df58-4fd3-981d-59abfd9cb3cb
+        config: {}
+        dataType: " VARCHAR"
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: HASH_DIRECT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: " MD5(\"ORDERS\".\"O_ORDERKEY\")"
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1210113-db44-4a4e-b411-9631d72417e2
+          stepCounter: 5cc15314-df58-4fd3-981d-59abfd9cb3cb
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: HASH_ALIAS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: MD5(SALESORDER_ID)
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
