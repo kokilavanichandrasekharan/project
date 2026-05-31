@@ -25,7 +25,7 @@ operation:
         runOrder: After
         templateString: |-
           SELECT *
-          FROM {{ this }}
+          FROM {{ ref('GATEKEEPER_TEST') }}
           WHERE STATUS LIKE 'STOP%'
     columns:
       - acceptedValues:

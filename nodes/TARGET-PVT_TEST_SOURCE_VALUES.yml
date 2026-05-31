@@ -17,6 +17,7 @@ operation:
       items:
         - {}
     inferPivot: false
+    pivotMode: Standard
     samKeyColval: false
     sincol: true
     subqueryval1: ""
@@ -145,22 +146,24 @@ operation:
         dependencies: []
         join:
           joinCondition: |-
-            FROM VALUES
-            (1,10000,'2023_Q1'),
-            (1,400,'2023_Q1'),
-            (2,4500,'2023_Q1'),
-            (2,35000,'2023_Q1'),
-            (1,5000,'2023_Q2'),
-            (1,3000,'2023_Q2'),
-            (2,200,'2023_Q2'),
-            (2,90500,'2023_Q2')
-            AS T(empid, amount, quarter)
+            SELECT *
+            FROM (
+                VALUES
+                    (1, 10000, '2023_Q1'),
+                    (1, 400, '2023_Q1'),
+                    (2, 4500, '2023_Q1'),
+                    (2, 35000, '2023_Q1'),
+                    (1, 5000, '2023_Q2'),
+                    (1, 3000, '2023_Q2'),
+                    (2, 200, '2023_Q2'),
+                    (2, 90500, '2023_Q2')
+            ) AS T(empid, amount, quarter)
         name: PVT_TEST_SOURCE_VALUES
         noLinkRefs: []
   name: PVT_TEST_SOURCE_VALUES
   overrideSQL: false
   schema: ""
-  sqlType: pivot:::409
+  sqlType: pivottnew:::409
   type: sql
   version: 1
 type: Node

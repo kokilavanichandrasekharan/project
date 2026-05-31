@@ -1,10 +1,15 @@
 fileVersion: 1
-id: e1021630-fdac-46ad-b5cf-b3fbcbc6aa02
-name: FACT_DISCOUNT_TEST
+id: a62db31e-ad49-42bc-af87-d2f95383d334
+name: FCT_NODE
 operation:
   config:
     postSQL: ""
-    preSQL: ""
+    preSQL: |-
+      begin
+        execute immediate $$select system$task_dependents_enable('TEST_DB.TEST_SCHEMA.TEST_TASK')$$;
+      exception
+        when statement_error then null;
+      end;
     testsEnabled: true
   database: ""
   deployEnabled: true
@@ -13,20 +18,15 @@ operation:
   locationName: TARGET
   materializationType: table
   metadata:
-    appliedNodeTests:
-      - continueOnFailure: true
-        description: ""
-        name: Test
-        runOrder: After
-        templateString: SYSTEM_CREATE_DATE IS NULL
+    appliedNodeTests: []
     columns:
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 1759e33d-3868-426d-a532-5010cd6ace9a
-          stepCounter: e1021630-fdac-46ad-b5cf-b3fbcbc6aa02
+          columnCounter: fceabe33-573c-42c7-9818-efa2cc409255
+          stepCounter: a62db31e-ad49-42bc-af87-d2f95383d334
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -42,8 +42,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c11c7e6d-80ac-4ffa-8716-9bdb611469a6
-          stepCounter: e1021630-fdac-46ad-b5cf-b3fbcbc6aa02
+          columnCounter: 98516662-fd3f-4fec-9fd9-0cabcdfa722b
+          stepCounter: a62db31e-ad49-42bc-af87-d2f95383d334
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -62,10 +62,10 @@ operation:
           customSQL: ""
         dependencies: []
         join:
-          joinCondition: 1=1
-        name: FACT_DISCOUNT_TEST
+          joinCondition: ""
+        name: FCT_NODE
         noLinkRefs: []
-  name: FACT_DISCOUNT_TEST
+  name: FCT_NODE
   overrideSQL: false
   schema: ""
   sqlType: Fact

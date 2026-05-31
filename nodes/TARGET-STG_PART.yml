@@ -158,7 +158,8 @@ operation:
           joinCondition: |-
             FROM {{ ref('SRC', 'PART') }} PART
             LEFT JOIN {{ ref('SRC', 'PART') }} PART_B
-            ON PART.P_PARTKEY = PART_B.P_PARTKEY
+            ON PART.P_PARTKEY = PART_B.P_PARTKEY 
+            where 2 = 3
         name: STG_PART
         noLinkRefs: []
   name: STG_PART

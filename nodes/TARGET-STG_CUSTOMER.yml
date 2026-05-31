@@ -13,7 +13,7 @@ operation:
   description: Creates the STG_CUSTOMER table, truncates the table, and then loads data from the CUSTOMER table.
   isMultisource: false
   locationName: TARGET
-  materializationType: table
+  materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
@@ -152,19 +152,27 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases:
-          CUSTOMER: 25f055b1-0e68-42a1-9eef-8f8c4ee1ddcd
+      - aliases: {}
         customSQL:
-          customSQL: ""
-        dependencies:
-          - locationName: SRC
-            nodeName: CUSTOMER
+          customSQL: |-
+            SELECT A.*
+            FROM (
+                SELECT 
+                    A.*,
+                    ROW_NUMBER() OVER (
+                        PARTITION BY C_CUSTKEY
+                        ORDER BY LOAD_TS DESC
+                    ) AS rn
+                FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER A
+            )
+            WHERE rn = 1;
+        dependencies: []
         join:
-          joinCondition: FROM {{ ref('SRC', 'CUSTOMER') }} "CUSTOMER"
+          joinCondition: FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER CUSTOMER
         name: STG_CUSTOMER
         noLinkRefs: []
   name: STG_CUSTOMER
-  overrideSQL: false
+  overrideSQL: true
   schema: ""
   sqlType: Stage
   type: sql
