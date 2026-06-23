@@ -5,6 +5,11 @@ metadata:
   defaultStorageLocation: null
   error: null
   nodeMetadataSpec: |-
+    name: newType
+    capitalized: New Type
+    plural: New Types
+    tagColor: '#3498db'
+
     columnAnnotations:
       - name: collate
         type: string
