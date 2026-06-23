@@ -1,0 +1,9 @@
+CREATE OR REPLACE TABLE {{ this }} (
+{% for col in columns %}
+    "{{ col.name }}" {{ col.dataType }}
+    {% if col.annotations.collate %}
+        COLLATE '{{ col.annotations.collate }}'
+    {% endif %}
+    {% if not loop.last %},{% endif %}
+{% endfor %}
+)

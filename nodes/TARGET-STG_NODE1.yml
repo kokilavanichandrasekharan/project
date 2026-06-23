@@ -1,6 +1,6 @@
 fileVersion: 1
-id: a2b52f92-1eea-4150-b1d7-928af412b883
-name: STG_NODE
+id: 057bb0a1-73ab-4ce6-a713-93d37ee43ae6
+name: STG_NODE1
 operation:
   config:
     insertStrategy: INSERT
@@ -15,42 +15,27 @@ operation:
   locationName: TARGET
   materializationType: table
   metadata:
-    appliedNodeTests:
-      - continueOnFailure: true
-        description: ""
-        name: Test
-        runOrder: After
-        templateString: SELECT * FROM {{ this }} WHERE 1=0
-      - continueOnFailure: true
-        description: ""
-        name: Test 1
-        runOrder: After
-        templateString: SELECT * FROM {{ this }} WHERE 1=0
-      - continueOnFailure: true
-        description: ""
-        name: Test 2
-        runOrder: After
-        templateString: SELECT * FROM {{ this }} WHERE 1=0
+    appliedNodeTests: []
     columns:
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: af6afdc0-01b4-435d-9c6b-d4571861f2b4
-          stepCounter: a2b52f92-1eea-4150-b1d7-928af412b883
+          columnCounter: a086e3d3-73ee-4b46-90bd-07f3557d2f73
+          stepCounter: 057bb0a1-73ab-4ce6-a713-93d37ee43ae6
         config: {}
-        dataType: INT
+        dataType: VARCHAR(200)
         defaultValue: ""
         description: ""
         keyColumnType: None
-        name: ID
+        name: DEALER_NAME
         nullable: true
         sourceColumnReferences:
           - columnReferences:
               - columnCounter: "0"
                 stepCounter: "0"
-            transform: "1"
+            transform: COLLATE('test', 'en-cs')::VARCHAR(200)
         systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
@@ -61,12 +46,12 @@ operation:
         dependencies: []
         join:
           joinCondition: ""
-        name: STG_NODE
+        name: STG_NODE1
         noLinkRefs: []
-  name: STG_NODE
+  name: STG_NODE1
   overrideSQL: false
   schema: ""
-  sqlType: "19"
+  sqlType: "20"
   type: sql
   version: 1
 type: Node

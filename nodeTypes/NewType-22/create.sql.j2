@@ -1,0 +1,6 @@
+CREATE OR REPLACE TABLE {{ this }} (
+{% for col in columns %}
+  "{{ col.name }}" {{ col.dataType }} COLLATE 'en-cs'
+  {% if not loop.last %},{% endif %}
+{% endfor %}
+)

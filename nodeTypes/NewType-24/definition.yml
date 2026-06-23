@@ -1,0 +1,12 @@
+fileVersion: 2
+id: "24"
+isDisabled: false
+metadata:
+  defaultStorageLocation: null
+  error: null
+  nodeMetadataSpec: |-
+    columnAnnotations:
+      - name: collate
+        type: string
+name: New Type
+type: NodeType
