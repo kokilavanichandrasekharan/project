@@ -1,0 +1,87 @@
+fileVersion: 1
+id: cb08226a-e288-42fa-b928-212ba2d3c9b3
+name: STREAM_NODE
+operation:
+  config:
+    appendOnly: false
+    initialRows: true
+    redeploymentBehavior: Create At Existing Stream
+    sourceType: Table
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TEST_STREAMS_ONLY
+  materializationType: stream
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd23aa4e-33de-4188-a4a8-d9ca7bd25d59
+          stepCounter: cb08226a-e288-42fa-b928-212ba2d3c9b3
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        metadataAction: true
+        name: METADATA$ACTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc8026da-9d15-4d08-9509-0d2f481fb478
+          stepCounter: cb08226a-e288-42fa-b928-212ba2d3c9b3
+        config: {}
+        dataType: boolean
+        defaultValue: ""
+        description: ""
+        metadataIsUpdate: true
+        name: METADATA$ISUPDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5cf7fe5-b356-42ad-b218-149646c9f640
+          stepCounter: cb08226a-e288-42fa-b928-212ba2d3c9b3
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        metadataRowID: true
+        name: METADATA$ROW_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: STREAM_NODE
+        noLinkRefs: []
+  name: STREAM_NODE
+  overrideSQL: false
+  schema: ""
+  sqlType: steamsandtask:::153
+  type: sql
+  version: 1
+type: Node

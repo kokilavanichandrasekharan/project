@@ -1,0 +1,8 @@
+excludeSelector: ""
+fileVersion: 1
+id: "10"
+includeSelector: |+
+  Stream and Insert or Merge
+
+name: stream_test_job
+type: Job
