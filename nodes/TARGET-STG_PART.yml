@@ -143,6 +143,26 @@ operation:
               - columnCounter: c1a690b2-1bd6-4fe2-91bf-ba0fbebcc574
                 stepCounter: 4a808587-cd81-4670-b6d8-9d268908148f
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95abbf5b-23e8-42a7-a631-280fa8c63f25
+          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: PARAM_VALUE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'{{ parameters.test_param }}'"
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

@@ -75,7 +75,7 @@ operation:
           customSQL: ""
         dependencies: []
         join:
-          joinCondition: ""
+          joinCondition: FROM DEV_KOKILAVANI.STREAM_TEST.TEST_TABLE
         name: STREAM_NODE
         noLinkRefs: []
   name: STREAM_NODE

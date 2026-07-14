@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "11"
+includeSelector: "STG_PART OR { location: \"TARGET\" name: \"STG_PART\" }"
+name: parameter_test_job
+type: Job
