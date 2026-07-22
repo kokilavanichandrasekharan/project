@@ -1,6 +1,6 @@
 excludeSelector: "- name: TEST_DIM_INVALID"
 fileVersion: 1
 id: "12"
-includeSelector: "- name: TEST_DIM_INVALID"
+includeSelector: ""
 name: TEST_EXCLUDE_SELECTOR
 type: Job
