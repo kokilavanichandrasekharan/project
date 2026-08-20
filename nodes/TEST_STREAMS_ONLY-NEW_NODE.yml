@@ -1,0 +1,56 @@
+fileVersion: 1
+id: 5e7d920e-2e2e-4043-a1b9-392f1c826b7b
+name: NEW_NODE
+operation:
+  config: {}
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TEST_STREAMS_ONLY
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4b7afd3-a194-4904-89e7-f305d0aa6fc8
+          stepCounter: 5e7d920e-2e2e-4043-a1b9-392f1c826b7b
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TEST_COL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          NEW_NODE: 5e7d920e-2e2e-4043-a1b9-392f1c826b7b
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: |
+            FROM {{ ref_no_link('TARGET', 'NEW_NODE') }}
+        name: NEW_NODE
+        noLinkRefs:
+          - locationName: TARGET
+            nodeName: NEW_NODE
+  name: NEW_NODE
+  overrideSQL: false
+  schema: ""
+  sqlType: "20"
+  type: sql
+  version: 1
+type: Node

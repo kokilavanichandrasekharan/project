@@ -1,0 +1,7 @@
+excludeSelector: "{nodeType:\"View\"}"
+fileVersion: 1
+id: "13"
+includeSelector: |
+  {name:"V_PART"}
+name: Test_Selector_Bug
+type: Job

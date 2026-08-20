@@ -1,0 +1,164 @@
+fileVersion: 1
+id: 8275cead-59f0-49af-920e-5e110c7585f8
+name: COPY_REPRO_10064
+operation:
+  config:
+    binformat: HEX
+    bytemark: true
+    columnmismatch: false
+    compression: ""
+    dateformat: ""
+    ddlCaseInsensitive: false
+    emptyfield: true
+    encoding: UTF8
+    enforceLength: ""
+    errornumber: ""
+    escapeenclosed: \134
+    escapeval: ""
+    externalURI: Enter external URI-Ex:s3://snowflake-docs
+    extlocation: false
+    fieldDelim: ","
+    fieldEnclosed: \042
+    fileFormatLoc: ""
+    fileFormatName: ""
+    fileFormatType: File Format Name
+    fileNames: ""
+    filePattern: ""
+    fileType: CSV
+    forceLoad: ""
+    inferschema: false
+    intextstage: false
+    loadUncertainFiles: ""
+    mulline: true
+    nullchar: ('\N')
+    onError: ""
+    parsehdr: true
+    parsehdr1: true
+    purgeBehavior: ""
+    recDelim: |+
+
+    replaceinvalidcharacters: true
+    returnFailedOnly: ""
+    sizeLimit: ""
+    skipBlankLines: false
+    skipHeader: "1"
+    stageName: Enter stage name-stage_name
+    stageStorageLocationName: Enter Storage Location name
+    storageintegration: ""
+    stripouterarray: true
+    subfolder: Enter folder name in stage if applicable-folder/subfolder
+    timeformat: ""
+    timestampformat: ""
+    trimSpace: false
+    truncateBefore: false
+    truncateColumns: ""
+    usevectscan: false
+  database: ""
+  deployEnabled: true
+  description: "Repro node for ticket #10064 - Veolia loadType undefined parameter warning"
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d858cb55-f103-4fc2-bbc1-a5d4e2faedec
+          stepCounter: 8275cead-59f0-49af-920e-5e110c7585f8
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: $1
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2362bfb-e49c-4f86-a0a9-e9e6fde67130
+          stepCounter: 8275cead-59f0-49af-920e-5e110c7585f8
+        config: {}
+        dataType: TIMESTAMP_NTZ
+        defaultValue: ""
+        description: ""
+        name: LOAD_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: current_timestamp()::timestamp_ntz
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17cc5f50-a785-456a-ae85-14faf1d0c441
+          stepCounter: 8275cead-59f0-49af-920e-5e110c7585f8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: FILENAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: METADATA$FILENAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6a20bb1-7dba-47e8-a88a-e2a9fc51649c
+          stepCounter: 8275cead-59f0-49af-920e-5e110c7585f8
+        config: {}
+        dataType: NUMBER
+        defaultValue: ""
+        description: ""
+        name: FILE_ROW_NUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: METADATA$FILE_ROW_NUMBER
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7316c4b-529f-41e9-b160-2d213f438eff
+          stepCounter: 8275cead-59f0-49af-920e-5e110c7585f8
+        config: {}
+        dataType: TIMESTAMP_NTZ
+        defaultValue: ""
+        description: ""
+        name: FILE_LAST_MODIFIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: METADATA$FILE_LAST_MODIFIED
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a39475ac-cbf7-447d-bdb2-3d54569e0a3b
+          stepCounter: 8275cead-59f0-49af-920e-5e110c7585f8
+        config: {}
+        dataType: TIMESTAMP_NTZ
+        defaultValue: ""
+        description: ""
+        name: SCAN_TIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: METADATA$START_SCAN_TIME
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: COPY_REPRO_10064
+        noLinkRefs: []
+  name: COPY_REPRO_10064
+  overrideSQL: false
+  schema: ""
+  sqlType: copyinto:::324
+  table: COPY_REPRO_10064
+  type: sql
+  version: 1
+type: Node

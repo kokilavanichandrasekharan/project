@@ -1,14 +1,8 @@
 fileVersion: 1
-id: f3f6d591-507e-4ca7-92d2-5c3779cc9988
-name: STG_PART
+id: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
+name: NEW_PART
 operation:
-  config:
-    insertStrategy: INSERT
-    postSQL: |
-      SELECT CURRENT_TIMESTAMP() AS RUN_TIME, 'post-sql-test' AS LABEL
-    preSQL: ""
-    testsEnabled: true
-    truncateBefore: true
+  config: {}
   database: ""
   deployEnabled: true
   description: Part data as defined by TPC-H
@@ -20,8 +14,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: eb85deec-772a-483f-bd14-7d1a9d404315
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: 6ebf3a8d-7b64-4351-bbc0-29b881170450
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -34,8 +28,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3b6233a3-c0c0-4857-a2ad-0ce3011afa33
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: 79ced0b4-7e6e-47ee-9b1f-0c3615769e53
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: VARCHAR(55)
         description: ""
@@ -48,8 +42,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 156b35b9-d26c-4003-be2b-15c90b5a1428
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: 2a69d563-cb8c-4b84-986d-97f9a497852a
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: VARCHAR(25)
         description: ""
@@ -62,8 +56,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 87350c80-c7d8-43f5-9543-aad64e65938d
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: 2f685c71-2831-461a-9570-c697561b428f
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: VARCHAR(10)
         description: ""
@@ -76,8 +70,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f9d72338-bded-4f6e-8719-6aa2e29c18ec
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: 3b93ffb5-cc94-436e-9917-4c434b9628cc
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: VARCHAR(25)
         description: ""
@@ -90,8 +84,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 8b139a20-8587-4ef8-9186-2a4ea363f3b5
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: 46b6cda8-afb6-49ee-ac19-7316cb25ae3d
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -104,8 +98,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 49ad6ed1-af80-40ed-993d-0f5728112889
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: a37580a9-4dc5-4c08-932b-6ea420b12ed8
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: VARCHAR(10)
         description: ""
@@ -118,8 +112,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 2ee52228-338c-4a68-968d-9610b879cbbf
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: 6bee000e-b23e-4854-bbc7-18bb3a126e15
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -132,8 +126,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: b1836882-a59c-4efe-a6cb-438de871ae27
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
+          columnCounter: 8be7a444-138b-4165-ac87-68535a917b2e
+          stepCounter: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         config: {}
         dataType: VARCHAR(23)
         description: ""
@@ -144,49 +138,24 @@ operation:
               - columnCounter: c1a690b2-1bd6-4fe2-91bf-ba0fbebcc574
                 stepCounter: 4a808587-cd81-4670-b6d8-9d268908148f
             transform: ""
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 95abbf5b-23e8-42a7-a631-280fa8c63f25
-          stepCounter: f3f6d591-507e-4ca7-92d2-5c3779cc9988
-        config: {}
-        dataType: VARCHAR
-        defaultValue: ""
-        description: ""
-        keyColumnType: None
-        name: PARAM_VALUE
-        nullable: true
-        sourceColumnReferences:
-          - columnReferences:
-              - columnCounter: "0"
-                stepCounter: "0"
-            transform: "'{{ parameters.test_param }}'"
-        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
       - aliases:
-          PART: 4a808587-cd81-4670-b6d8-9d268908148f
-          PART_B: 4a808587-cd81-4670-b6d8-9d268908148f
+          P: e6fb9d6b-c90b-436c-9d98-2c331fef6f5b
         customSQL:
           customSQL: ""
-        dependencies:
-          - locationName: SRC
-            nodeName: PART
+        dependencies: []
         join:
-          joinCondition: |-
-            FROM {{ ref('SRC', 'PART') }} PART
-            LEFT JOIN {{ ref('SRC', 'PART') }} PART_B
-            ON PART.P_PARTKEY = PART_B.P_PARTKEY 
-            where 2 = 3
-        name: STG_PART
-        noLinkRefs: []
-  name: STG_PART
+          joinCondition: FROM {{ ref_no_link('TARGET', 'NEW_PART') }} P
+        name: NEW_PART
+        noLinkRefs:
+          - locationName: TARGET
+            nodeName: NEW_PART
+  name: NEW_PART
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: "20"
   type: sql
   version: 1
 type: Node
