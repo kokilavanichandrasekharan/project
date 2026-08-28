@@ -42,7 +42,15 @@ operation:
   locationName: TARGET
   materializationType: dynamic table
   metadata:
-    appliedNodeTests: []
+    appliedNodeTests:
+      - continueOnFailure: false
+        description: ""
+        name: Test
+        runOrder: After
+        templateString: |-
+          SELECT *
+          FROM TEST_DYNAMIC_REPRO2
+          WHERE 1 = 0;
     columns:
       - appliedColumnTests: {}
         columnReference:
