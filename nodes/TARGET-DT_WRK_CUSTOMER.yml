@@ -148,7 +148,7 @@ operation:
           stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
         config: {}
         dataType: VARCHAR(117)
-        description: ""
+        description: test comment description
         name: customerComment
         nullable: true
         sourceColumnReferences:
@@ -171,7 +171,10 @@ operation:
                 stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
             transform: ""
     cteString: ""
+    description: ""
+    destinationName: ""
     enabledColumnTestIDs: []
+    materializationOption: ""
     sourceMapping:
       - aliases:
           STG_CUSTOMER: 84abc574-46ea-4b8b-821e-094e8ae55b1e
