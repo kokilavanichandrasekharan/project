@@ -1,5 +1,5 @@
 fileVersion: 1
-id: cc6c8827-c044-46f5-9485-c3d3db057803
+id: 51900900-e208-42e2-8a89-c8a65e534562
 name: DT_WRK_CUSTOMER
 operation:
   config:
@@ -26,7 +26,7 @@ operation:
     lagSpecification:
       items:
         - lagPeriod: Minutes
-          lagValue: "61"
+          lagValue: "60"
     refreshWarehouseSize: ""
     refresh_mode: AUTO
     selectDistinct: false
@@ -46,8 +46,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 4fbc0bad-b28d-450c-850f-c2c3528bf9cd
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: 30ec196f-db45-4f7d-bf83-63af00b58596
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: NUMBER(38,0)
         description: Customer identifier. Primary key for the Customer table. Links customer information across the data warehouse. Used in reports detailing customer demographics, purchasing patterns, and engagement metrics. Directly sourced from the Customer table in the source system. No transformations applied.
@@ -60,8 +60,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 601397c0-385d-4698-adc6-4a9988af3b50
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: 9b8287bb-b705-47fe-9592-4bf4d06928c7
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: VARCHAR(25)
         description: Customer's full name. Used for personalized marketing campaigns and customer service interactions. Sourced directly from the Customer table in the source system. No transformations applied. Appears in customer profile reports and contact lists. Complies with data privacy regulations regarding personally identifiable information. Enables targeted communication strategies based on customer preferences and demographics.
@@ -74,8 +74,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f780910f-aba7-4439-a5f7-e06ee56a32bc
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: bd9cc547-5e1d-4789-a7b2-f821f1542e39
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: VARCHAR(40)
         description: ""
@@ -88,8 +88,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 9b6aac43-d6af-47a2-bf19-08d1c1a3be5e
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: 00b06fcb-b3d7-4657-a372-a5cee8eeed64
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -102,8 +102,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: efb38eac-1ee7-44dc-b435-d8a2799ae824
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: 04b25e44-8bc2-4f11-bcb4-cfa513f93593
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -116,8 +116,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 6cd5a7ee-7e84-478d-babe-13da164af389
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: 36369096-514d-42f3-a3e3-4c2236ab024a
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -130,8 +130,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: edceb11d-eda2-426d-852a-3cc069bf6a27
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: 857a5f1d-926c-440b-8a5c-1b795bee3492
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: VARCHAR(10)
         description: ""
@@ -144,12 +144,12 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f1e23c28-e29d-4f5d-84c0-5a61302d6b8e
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: dfcaa38a-7b33-4450-87b1-e903e0c8119d
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: VARCHAR(117)
-        description: Updated comment
-        name: ticketNumber
+        description: ""
+        name: C_COMMENT
         nullable: true
         sourceColumnReferences:
           - columnReferences:
@@ -158,8 +158,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f4287891-b4d4-4b64-a3be-d7060808aa38
-          stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
+          columnCounter: 7a3fbff5-715b-448f-9634-ffb5a3c33096
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
         config: {}
         dataType: TIMESTAMP
         description: ""
@@ -169,6 +169,21 @@ operation:
           - columnReferences:
               - columnCounter: 824b74b9-a2a6-4428-95d4-c428196aa213
                 stepCounter: 84abc574-46ea-4b8b-821e-094e8ae55b1e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c3667e6-efec-4dca-8c8a-ef5c743d122c
+          stepCounter: 51900900-e208-42e2-8a89-c8a65e534562
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: Initial comment
+        name: ticketNumber
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
             transform: ""
     cteString: ""
     description: ""
@@ -190,7 +205,7 @@ operation:
   name: DT_WRK_CUSTOMER
   overrideSQL: false
   schema: ""
-  sqlType: dynamicnewversion:::347
+  sqlType: dynamic:::347
   type: sql
   version: 1
 type: Node
