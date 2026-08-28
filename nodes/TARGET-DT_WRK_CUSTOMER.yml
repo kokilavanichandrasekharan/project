@@ -43,11 +43,14 @@ operation:
   materializationType: dynamic table
   metadata:
     appliedNodeTests:
-      - continueOnFailure: true
+      - continueOnFailure: false
         description: ""
-        name: WHERE customerComment = 'value1'
+        name: WHERE customerComment = 'value2'
         runOrder: After
-        templateString: ""
+        templateString: |-
+          SELECT *
+          FROM DT_WRK_CUSTOMER
+          WHERE 1 = 1;
     columns:
       - appliedColumnTests: {}
         columnReference:
