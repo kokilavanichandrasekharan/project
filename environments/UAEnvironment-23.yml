@@ -6,6 +6,6 @@ mappingDefinitions:
     schema: TPCH_SF1
   TARGET:
     database: DEV_KOKILAVANI
-    schema: WORKTEST_NEW
+    schema: WORKTEST
 name: UA Environment
 type: Environment
