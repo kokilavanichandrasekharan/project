@@ -171,7 +171,7 @@ operation:
           stepCounter: ee004433-0d33-4bb6-8cc2-5943cd3189f1
         config: {}
         dataType: VARCHAR(23)
-        description: test description 2
+        description: workaround verification test
         name: partComment
         nullable: true
         sourceColumnReferences:
