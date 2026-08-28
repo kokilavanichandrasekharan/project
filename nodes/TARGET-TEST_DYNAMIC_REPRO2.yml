@@ -48,9 +48,9 @@ operation:
         name: Test
         runOrder: After
         templateString: |-
-          SELECT *
-          FROM TEST_DYNAMIC_REPRO2
-          LIMIT 1;
+          SELECT
+              P_PARTKEY
+          FROM TEST_DYNAMIC_REPRO2;
     columns:
       - appliedColumnTests: {}
         columnReference:
