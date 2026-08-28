@@ -50,7 +50,7 @@ operation:
         templateString: |-
           SELECT *
           FROM TEST_DYNAMIC_REPRO2
-          WHERE 1 = 0;
+          LIMIT 1;
     columns:
       - appliedColumnTests: {}
         columnReference:
