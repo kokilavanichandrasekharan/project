@@ -47,10 +47,11 @@ operation:
         description: ""
         name: Test
         runOrder: After
-        templateString: |-
+        templateString: |
           SELECT
               P_PARTKEY
-          FROM TEST_DYNAMIC_REPRO2;
+          FROM TEST_DYNAMIC_REPRO2
+          WHERE P_TYPE = 'value1';
     columns:
       - appliedColumnTests: {}
         columnReference:
