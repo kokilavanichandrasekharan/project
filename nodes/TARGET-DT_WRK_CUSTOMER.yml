@@ -42,7 +42,12 @@ operation:
   locationName: TARGET
   materializationType: dynamic table
   metadata:
-    appliedNodeTests: []
+    appliedNodeTests:
+      - continueOnFailure: true
+        description: ""
+        name: WHERE customerComment = 'value1'
+        runOrder: After
+        templateString: ""
     columns:
       - appliedColumnTests: {}
         columnReference:
