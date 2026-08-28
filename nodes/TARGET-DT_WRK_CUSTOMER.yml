@@ -148,7 +148,7 @@ operation:
           stepCounter: cc6c8827-c044-46f5-9485-c3d3db057803
         config: {}
         dataType: VARCHAR(117)
-        description: test comment description
+        description: Updated comment
         name: ticketNumber
         nullable: true
         sourceColumnReferences:
