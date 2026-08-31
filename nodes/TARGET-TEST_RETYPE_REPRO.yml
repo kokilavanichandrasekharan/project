@@ -1,5 +1,5 @@
 fileVersion: 1
-id: 9da62ae9-09e3-454a-a9d8-9bd8c0690c84
+id: e895b0f8-c1d7-4834-b743-36ea2b07dc7e
 name: TEST_RETYPE_REPRO
 operation:
   config:
@@ -19,8 +19,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3c84f80f-cc6e-4ee1-8e0f-5c4687b22062
-          stepCounter: 9da62ae9-09e3-454a-a9d8-9bd8c0690c84
+          columnCounter: 73f19932-b9e9-429e-9484-2c83dec19ef2
+          stepCounter: e895b0f8-c1d7-4834-b743-36ea2b07dc7e
         config: {}
         dataType: VARCHAR(16777216)
         description: ""
@@ -48,8 +48,6 @@ operation:
   overrideSQL: false
   schema: ""
   sqlType: Stage
-  storageLocations:
-    - locationName: TARGET
   table: TEST_RETYPE_REPRO
   type: sql
   version: 1
