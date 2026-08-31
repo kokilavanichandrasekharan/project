@@ -7,8 +7,5 @@ mappingDefinitions:
   TARGET:
     database: DEV_KOKILAVANI
     schema: WORKTEST
-  TEST_STREAMS_ONLY:
-    database: DEV_KOKILAVANI
-    schema: STREAM_TEST
 name: DEV_WAREHOUSE_ERROR_LAB
 type: Environment

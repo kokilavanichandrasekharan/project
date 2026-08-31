@@ -3,6 +3,5 @@
 @materializationType("view")
 
 SELECT
-    C_CUSTKEY AS CUSTKEY,
-    C_NAME AS CUSTNAME
-FROM "STG_CUSTOMER";
+    1 AS CUSTKEY,
+    'test' AS CUSTNAME;

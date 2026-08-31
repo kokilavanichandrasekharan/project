@@ -6,9 +6,6 @@ mappingDefinitions:
     schema: TPCH_SF1
   TARGET:
     database: DEV_KOKILAVANI
-    schema: WORKTEST_NEW
-  TEST_STREAMS_ONLY:
-    database: DEV_KOKILAVANI
-    schema: STREAM_TEST
+    schema: WORKTEST
 name: Acceptance Environment
 type: Environment

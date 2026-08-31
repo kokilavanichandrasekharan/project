@@ -3,4 +3,3 @@ fileVersion: 1
 locations:
   - SRC
   - TARGET
-  - TEST_STREAMS_ONLY
