@@ -6,7 +6,7 @@ mappingDefinitions:
     schema: TPCH_SF1
   TARGET:
     database: DEV_KOKILAVANI
-    schema: WORKTEST
+    schema: WORKTEST_NEW
   TEST_STREAMS_ONLY:
     database: DEV_KOKILAVANI
     schema: STREAM_TEST

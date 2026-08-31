@@ -2,6 +2,5 @@
 @nodeType("27")
 @materializationType("view")
 
-SELECT
-    1 AS TEST_COLUMN,
-    CURRENT_DATE AS RUN_DATE;
+SELECT 2 AS NEW_COLUMN;
+

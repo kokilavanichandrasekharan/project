@@ -1,0 +1,56 @@
+fileVersion: 1
+id: 9da62ae9-09e3-454a-a9d8-9bd8c0690c84
+name: TEST_RETYPE_REPRO
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c84f80f-cc6e-4ee1-8e0f-5c4687b22062
+          stepCounter: 9da62ae9-09e3-454a-a9d8-9bd8c0690c84
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: TEST_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "'N'"
+        transform: "'N'"
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: ""
+        name: TEST_RETYPE_REPRO
+        noLinkRefs: []
+  name: TEST_RETYPE_REPRO
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  storageLocations:
+    - locationName: TARGET
+  table: TEST_RETYPE_REPRO
+  type: sql
+  version: 1
+type: Node
