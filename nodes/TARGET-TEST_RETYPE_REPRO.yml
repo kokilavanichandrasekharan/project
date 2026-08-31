@@ -22,14 +22,14 @@ operation:
           columnCounter: 73f19932-b9e9-429e-9484-2c83dec19ef2
           stepCounter: e895b0f8-c1d7-4834-b743-36ea2b07dc7e
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: BOOLEAN
         description: ""
-        name: TEST_FLAG
+        name: TEST_IND
         nullable: true
         sourceColumnReferences:
           - columnReferences: []
-            transform: "'N'"
-        transform: "'N'"
+            transform: "TRUE"
+        transform: "TRUE"
     cteString: ""
     description: ""
     destinationName: ""
