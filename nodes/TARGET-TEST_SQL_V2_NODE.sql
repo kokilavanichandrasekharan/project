@@ -2,5 +2,7 @@
 @nodeType("27")
 @materializationType("view")
 
-SELECT 2 AS NEW_COLUMN;
-
+SELECT
+    C_CUSTKEY AS CUSTKEY,
+    C_NAME AS CUSTNAME
+FROM "STG_CUSTOMER";
