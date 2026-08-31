@@ -30,6 +30,26 @@ operation:
           - columnReferences: []
             transform: "TRUE"
         transform: "TRUE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf4558aa-6d9f-462e-8574-b6a83e5b1f29
+          stepCounter: e895b0f8-c1d7-4834-b743-36ea2b07dc7e
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: TEST_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: "'TRUE'"
+        systemColumnType: None
     cteString: ""
     description: ""
     destinationName: ""
