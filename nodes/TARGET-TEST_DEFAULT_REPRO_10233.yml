@@ -1,0 +1,84 @@
+fileVersion: 1
+id: 1b5da1b3-3117-48a8-ad32-0aa8d25702fc
+name: TEST_DEFAULT_REPRO_10233
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Part data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fc99d59-ed96-49c3-9064-663d13799277
+          stepCounter: 1b5da1b3-3117-48a8-ad32-0aa8d25702fc
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PART_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eb85deec-772a-483f-bd14-7d1a9d404315
+                stepCounter: 4a808587-cd81-4670-b6d8-9d268908148f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e7c71f8-939a-4ef8-b7c8-dfacfc955714
+          stepCounter: 1b5da1b3-3117-48a8-ad32-0aa8d25702fc
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: "'CHANGED_VALUE'"
+        description: ""
+        name: COL_NOTNULL_DEFAULT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "'Unknown'"
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0cdc053e-89d1-49e6-bcbf-71ada5941fc1
+          stepCounter: 1b5da1b3-3117-48a8-ad32-0aa8d25702fc
+        config: {}
+        dataType: VARCHAR(20)
+        defaultValue: "'Unknown'"
+        description: ""
+        name: COL_NULLABLE_DEFAULT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "'Unknown'"
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          PART: 4a808587-cd81-4670-b6d8-9d268908148f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: PART
+        join:
+          joinCondition: FROM {{ ref('SRC', 'PART') }} "PART"
+        name: TEST_DEFAULT_REPRO_10233
+        noLinkRefs: []
+  name: TEST_DEFAULT_REPRO_10233
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  table: TEST_DEFAULT_REPRO_10233
+  type: sql
+  version: 1
+type: Node
