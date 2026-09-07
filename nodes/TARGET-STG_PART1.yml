@@ -1,0 +1,91 @@
+fileVersion: 1
+id: ffd6395d-02a5-464a-a8bc-5f9115134722
+name: STG_PART1
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: Part data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90a596e2-8b08-49d6-9e3b-122feabd887d
+          stepCounter: ffd6395d-02a5-464a-a8bc-5f9115134722
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: P_PARTKEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 50d55b81-31f4-413c-9dc8-1657f8a2f45c
+                stepCounter: 4a808587-cd81-4670-b6d8-9d268908148f
+            transform: PAR.P_PARTKEY
+        transform: POSITION.P_PARTKEY
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecf6ccc8-ca69-4907-a86b-dab203a635bf
+          stepCounter: ffd6395d-02a5-464a-a8bc-5f9115134722
+        config: {}
+        dataType: VARCHAR(55)
+        description: ""
+        name: P_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4656b42a-1369-482c-aa58-76e4780940ff
+                stepCounter: 4a808587-cd81-4670-b6d8-9d268908148f
+            transform: PAR.P_NAME
+        transform: POSITION.P_NAME
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 950fd8a5-ed07-4ca5-b826-69adac70b50b
+          stepCounter: ffd6395d-02a5-464a-a8bc-5f9115134722
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: P_MFGR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 42af412c-5c1c-48ef-bac7-f648bb9265bd
+                stepCounter: 4a808587-cd81-4670-b6d8-9d268908148f
+            transform: PAR.P_MFGR
+        transform: POSITION.P_MFGR
+    cteString: ""
+    description: ""
+    destinationName: ""
+    enabledColumnTestIDs: []
+    materializationOption: ""
+    sourceMapping:
+      - aliases:
+          PAR: 4a808587-cd81-4670-b6d8-9d268908148f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: PART
+        join:
+          joinCondition: |+
+            FROM {{ ref('SRC', 'PART') }} PAR
+
+        name: STG_PART1
+        noLinkRefs: []
+  name: STG_PART1
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  table: STG_PART1
+  type: sql
+  version: 1
+type: Node
