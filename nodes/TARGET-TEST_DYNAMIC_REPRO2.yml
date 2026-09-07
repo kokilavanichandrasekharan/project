@@ -178,7 +178,7 @@ operation:
           - columnReferences:
               - columnCounter: c1a690b2-1bd6-4fe2-91bf-ba0fbebcc574
                 stepCounter: 4a808587-cd81-4670-b6d8-9d268908148f
-            transform: ""
+            transform: CAST(P_RETAILPRICE AS NUMBER(12,2))
     cteString: ""
     description: ""
     destinationName: ""
