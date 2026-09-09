@@ -92,9 +92,9 @@ operation:
           columnCounter: c5fc7a57-7ca3-4caa-a976-d21f651c5f7f
           stepCounter: 73763d41-a3a4-4499-aef6-bdf9d9bbcf07
         config: {}
-        dataType: NUMBER(12,2)
+        dataType: NUMBER(18,4)
         defaultValue: ""
-        description: ""
+        description: "Modified by incoming branch"
         name: L_QUANTITY
         nullable: false
         primaryKey: false
@@ -149,9 +149,9 @@ operation:
           columnCounter: c58e2b76-f263-414c-9e94-626aab5ed3a0
           stepCounter: 73763d41-a3a4-4499-aef6-bdf9d9bbcf07
         config: {}
-        dataType: NUMBER(12,2)
+        dataType: NUMBER(18,4)
         defaultValue: ""
-        description: ""
+        description: "Modified by incoming branch"
         name: L_TAX
         nullable: false
         primaryKey: false
@@ -282,9 +282,9 @@ operation:
           columnCounter: 160e209a-bc18-4027-aab9-491ee7a5ec4b
           stepCounter: 73763d41-a3a4-4499-aef6-bdf9d9bbcf07
         config: {}
-        dataType: VARCHAR(10)
+        dataType: VARCHAR(20)
         defaultValue: ""
-        description: ""
+        description: "Modified by incoming branch"
         name: L_SHIPMODE
         nullable: false
         primaryKey: false
