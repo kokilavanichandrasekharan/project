@@ -71,7 +71,7 @@ operation:
   name: STG_NODE1
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: dynamic:::347
   type: sql
   version: 1
 type: Node
