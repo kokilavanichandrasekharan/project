@@ -3,11 +3,14 @@ id: 07654f5c-ed2e-4748-a7c5-34eef6c652ef
 name: STG_NODE1
 operation:
   config:
+    initialize: ON_CREATE
     insertStrategy: INSERT
     postSQL: ""
     preSQL: ""
+    refresh_mode: AUTO
     testsEnabled: true
     truncateBefore: true
+    warehouseName: dev_wh_xs
   database: ""
   deployEnabled: true
   description: ""
