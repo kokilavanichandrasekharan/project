@@ -1,0 +1,23 @@
+fileVersion: 1
+id: "28"
+isDisabled: false
+metadata:
+  defaultStorageLocation: null
+  error: null
+  nodeMetadataSpec: |+
+    capitalized: New Type
+    short: NEW
+    tagColor: gray
+    plural: New Types
+    config:
+      - groupName: General
+        items:
+          - displayName: Header
+            attributeName: header
+            type: toggleButton
+            default: true
+            isRequired: true
+            enableIf: 'true'
+
+name: New Type
+type: NodeType
