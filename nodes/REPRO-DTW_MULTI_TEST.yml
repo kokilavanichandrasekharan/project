@@ -75,7 +75,8 @@ operation:
                 stepCounter: f08e6061-6436-4b82-9a09-888220fd103a
             transform: ""
           - columnReferences: []
-            transform: "\"SRC_B\".\"NAME\""
+            transform: |
+              UPPER("SRC_B"."NAME")
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
