@@ -1,5 +1,8 @@
 fileVersion: 1
 id: "29"
-mappingDefinitions: {}
+mappingDefinitions:
+  REPRO:
+    database: ""
+    schema: ""
 name: New Environment
 type: Environment

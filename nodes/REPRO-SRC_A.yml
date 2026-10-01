@@ -1,0 +1,54 @@
+fileVersion: 1
+id: f08e6061-6436-4b82-9a09-888220fd103a
+name: SRC_A
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: REPRO
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a1e7e74-7b16-45c9-92d4-5d060d52f4be
+          stepCounter: f08e6061-6436-4b82-9a09-888220fd103a
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cb02270-e10c-4e5e-845a-27e0c7ff6b30
+          stepCounter: f08e6061-6436-4b82-9a09-888220fd103a
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: SRC_A
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
