@@ -76,7 +76,7 @@ operation:
             transform: UPPER("SRC_A"."NAME")
           - columnReferences: []
             transform: |
-              UPPER("SRC_B"."NAME")
+              LOWER("SRC_B"."NAME")
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
