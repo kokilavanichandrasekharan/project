@@ -73,7 +73,7 @@ operation:
           - columnReferences:
               - columnCounter: 8cb02270-e10c-4e5e-845a-27e0c7ff6b30
                 stepCounter: f08e6061-6436-4b82-9a09-888220fd103a
-            transform: ""
+            transform: UPPER("SRC_A"."NAME")
           - columnReferences: []
             transform: |
               UPPER("SRC_B"."NAME")
