@@ -2,8 +2,8 @@ fileVersion: 1
 id: "18"
 mappingDefinitions:
   REPRO:
-    database: ""
-    schema: ""
+    database: DEV_KOKILAVANI
+    schema: DT_REPRO_10748
   SRC:
     database: SNOWFLAKE_SAMPLE_DATA
     schema: TPCH_SF1
