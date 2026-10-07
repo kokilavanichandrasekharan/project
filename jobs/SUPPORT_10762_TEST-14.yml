@@ -1,0 +1,7 @@
+excludeSelector: ""
+fileVersion: 1
+id: "14"
+includeSelector: |
+  { location: TARGET name: STG_NODE }
+name: SUPPORT_10762_TEST.
+type: Job
