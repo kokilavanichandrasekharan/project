@@ -38,7 +38,7 @@ operation:
         config: {}
         dataType: VARCHAR(25)
         description: ""
-        name: N_NAME
+        name: N_NAME_RENAMED
         nullable: false
         sourceColumnReferences:
           - columnReferences:
