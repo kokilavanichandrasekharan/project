@@ -1,0 +1,93 @@
+fileVersion: 1
+id: a0d91198-15aa-4206-9c12-4a1737b8fa21
+name: V_7449_C
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: Nation data as defined by TPC-H
+  isMultisource: false
+  locationName: TARGET
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9044157d-2687-4831-a2e8-fa8e3f6aa0d8
+          stepCounter: a0d91198-15aa-4206-9c12-4a1737b8fa21
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: N_NATIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 07e6a7e3-acee-41f8-a3c9-4ecf7f27f7f0
+                stepCounter: e1e0c419-3950-41ae-b949-7d4a9a94542b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fca055f-d171-4184-8cc2-b9bc77735037
+          stepCounter: a0d91198-15aa-4206-9c12-4a1737b8fa21
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: N_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2ff3e06-66bf-4dfd-a2a3-9997219e19d3
+                stepCounter: e1e0c419-3950-41ae-b949-7d4a9a94542b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c0e5cf5-4103-4ff5-90d6-cbb9f9d08331
+          stepCounter: a0d91198-15aa-4206-9c12-4a1737b8fa21
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: N_REGIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71ac6ea2-ab70-44c5-b80c-7b95623f88a0
+                stepCounter: e1e0c419-3950-41ae-b949-7d4a9a94542b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4ceaad7-97ec-4fea-a885-fb36f99aacda
+          stepCounter: a0d91198-15aa-4206-9c12-4a1737b8fa21
+        config: {}
+        dataType: VARCHAR(152)
+        description: ""
+        name: N_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e9fbb77d-d2a0-4190-ba9e-0353b8db9d4b
+                stepCounter: e1e0c419-3950-41ae-b949-7d4a9a94542b
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          V_7449_B: e1e0c419-3950-41ae-b949-7d4a9a94542b
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: TARGET
+            nodeName: V_7449_B
+        join:
+          joinCondition: FROM {{ ref('TARGET', 'V_7449_B') }} "V_7449_B"
+        name: V_7449_C
+        noLinkRefs: []
+  name: V_7449_C
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
