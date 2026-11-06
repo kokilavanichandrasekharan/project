@@ -1,0 +1,82 @@
+fileVersion: 1
+id: c205fec2-c93f-493a-a61d-3d7a99390141
+name: STG_NODE2
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96c678fa-ca7e-474c-8f78-879fdf89bbf0
+          stepCounter: c205fec2-c93f-493a-a61d-3d7a99390141
+        config: {}
+        dataType: " NUMBER"
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SOURCE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: src.SOURCE_ID
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c143b0d3-4caf-4cd6-a2b5-ddbd4697031d
+          stepCounter: c205fec2-c93f-493a-a61d-3d7a99390141
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: SOURCE_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: src.SOURCE_NAME
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: |
+            FROM (VALUES
+                (1, 'SMS_SALESFORCE'),
+                (2, 'SECOND_SOURCE'),
+                (3, 'THIRD_SOURCE')
+            ) AS src (SOURCE_ID, SOURCE_NAME)
+        name: STG_NODE2
+        noLinkRefs: []
+  name: STG_NODE2
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
