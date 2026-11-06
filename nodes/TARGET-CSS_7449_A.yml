@@ -46,7 +46,7 @@ operation:
     warehouseName: COMPUTE_WH
   database: ""
   deployEnabled: true
-  description: Nation data as defined by TPC-H
+  description: Nation data as defined by TPC-H test
   isMultisource: false
   locationName: TARGET
   materializationType: cortex search service
